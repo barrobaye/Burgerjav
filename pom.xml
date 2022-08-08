@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.gestion.commande</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>commande_produit</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>firstSprint</name>
-	<description>Demo project for Spring Boot</description>
+	<name>commande_produit</name>
+	<description>gestion commande de produit</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -51,7 +51,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
 	</dependencies>
 
 	<build>

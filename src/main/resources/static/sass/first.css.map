@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,IAAI,CAAA;EACA,OAAO,EAAE,IAAI;CAChB;;AACD,AAAA,KAAK,CAAC;EACF,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;CACtB",
+    "sources": [
+        "first.scss"
+    ],
+    "names": [],
+    "file": "first.css"
+}

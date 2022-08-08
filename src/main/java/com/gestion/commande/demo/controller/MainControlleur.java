@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainControlleur {
     @GetMapping({"/.", "/index"})
     public String index(Model model){
-        model.addAttribute("e221", "message");
+        model.addAttribute("e221", "message ici on n'a pas peur de mourir");
         return "index";
     }
 }

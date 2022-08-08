@@ -9,5 +9,5 @@ import com.gestion.commande.demo.models.Burgers;
 public interface BurgersRepository extends JpaRepository < Burgers , Long> {
     
     // @Query("SELECT c FROM Categorie c WHERE c.nom=:nom")
-    Optional<Burgers> findByNom(String nom);
+    //Optional<Burgers> findByNom(String libelle);
 }

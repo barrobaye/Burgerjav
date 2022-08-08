@@ -1,0 +1,63 @@
+@import "compass/reset";
+
+#top{
+    margin-top: 25px;
+    display: flex;
+}
+.left {
+    display: flex;
+    width: 220px;
+    justify-content: space-around;
+    align-items: center;
+}
+.right{
+    margin-left: auto;
+button{
+    border-radius: 50px;
+}
+.panier{
+     background-color: black;
+   color: white;
+}
+}
+.image{
+    margin-top: 33px;
+    width: 1354px;
+    height: 99vh;
+    
+}
+.plan1{
+    margin-top: -542px;
+    width: 1354px;
+    height: 99vh;
+    background-color: black;
+    opacity: 0.7;
+    position: relative;
+}
+.inf{
+    margin-top: 8px;
+    margin-left: 35px;
+    .titre{
+        font-weight: bold;
+        font-size: x-large;
+    }
+    h3{
+        font-weight: bold;
+        font-size: large;
+    }
+    
+}
+.burger{
+    width: 1354px;
+    display: flex;
+    .menu{
+        margin-top: 33px;
+        border:2px solid;
+        width: 400px;
+        
+    }
+}
+.catalo{
+    width: auto;
+    margin-left: 35px;
+}
