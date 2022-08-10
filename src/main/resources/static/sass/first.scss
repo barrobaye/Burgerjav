@@ -1,5 +1,10 @@
 @import "compass/reset";
-
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
 #top{
     margin-top: 25px;
     display: flex;
@@ -48,16 +53,35 @@ button{
     
 }
 .burger{
+    margin-top: 33px;
     width: 1354px;
     display: flex;
     .menu{
-        margin-top: 33px;
-        border:2px solid;
+        margin-left: 12px;
         width: 400px;
-        
+        height: 400px;
+        overflow-y: scroll;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
     }
 }
 .catalo{
-    width: auto;
-    margin-left: 35px;
+    width: 1700px;
+}
+.titr{
+    font-weight: bold;
+    font-size: x-large;
+    margin-left:7px;
+   }
+.section{
+    width:70%
+    border
+}
+#obj{
+    width: 1052px;
+    margin-left: 10px;
 }

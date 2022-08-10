@@ -19,7 +19,6 @@
         <h4 class="logo"> Brazil Burger</h4>
     </div>
     <div class="annonce">
-
     </div>
     <div class="right">
         <button class="panier"><i class="fa-solid fa-cart-minus"></i>
@@ -27,8 +26,7 @@
         <button class="seconnecte">Se connecter</button>
     </div>
 </div>
-
-<img class="image" th:src="@{img/image1.png}" src="" alt="">
+<img class="image" th:src="@{img/image1.png}" alt="">
 <div class="plan1" id=""></div>
 <div class="inf">
 <h1 class="titre"> Les Burgers de Brazil Burger - Ouest Foire </h1>
@@ -37,26 +35,83 @@
 <p>Paiement par Swile, Pass Sodexo, Ticket Restaurant®, Bimpli (ex Apetiz), et Up accepté</p>
 </div>
 <div class="burger">
-    <div class="menu">   
-        <h2>Notre selection pour vous</h2> 
-        <nav >
+    <div class="menu">
+        <h2 style="
+    text-decoration: underline;
+">Notre selection pour vous</h2>
+        <nav class="mt-2">
+            <ul class="mt-2">
             <li>
                 <a href="">Burgers</a>
             </li>
-            <li>
+            <li class="mt-2">
                 <a href="">Menus</a>
             </li>
-                <li>
+                <li class="mt-2">
                     <a href="">Boissons</a>
                 </li>
-                <li>
+                <li class="mt-2">
                     <a href="">Frites</a>
                 </li>
+            </ul>
         </nav>                            
     </div>
+    
     <div class="catalo">
-        <div class="onesection">
-            <h1 class="titre">Notre Selection pour vous</h1>
+        <div class="row" id="obj">
+            <h1 class="titr">Notre Selection pour vous</h1>
+            <div class="col-md-3 col-sm-6 col-xs-12 mt-3">
+                <div class="card" >
+                    <img th:src="@{img/21efd1f1-8ac0-42c0-a787-b2aeddee8c77.jpeg}"class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">2500FCFA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 mt-3">
+                <div class="card" >
+                    <img th:src="@{img/21efd1f1-8ac0-42c0-a787-b2aeddee8c77.jpeg}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">2500 FCFA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 mt-3">
+                <div class="card" >
+                    <img th:src="@{img/21efd1f1-8ac0-42c0-a787-b2aeddee8c77.jpeg}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">2500 FCFA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 mt-3">
+                <div class="card" >
+                    <img th:src="@{img/21efd1f1-8ac0-42c0-a787-b2aeddee8c77.jpeg}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">2500 FCFA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 mt-3">
+                <div class="card" >
+                    <img th:src="@{img/21efd1f1-8ac0-42c0-a787-b2aeddee8c77.jpeg}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">2500 FCFA</p>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="section">
+               <div class="obj">
+                   <img src="" alt="">
+                   <h2></h2>
+                   <p></p>
+               </div>
+               -->
+            </div>
         </div>
     </div>
 </div>

@@ -26,23 +26,18 @@ public class CommandesBurgers {
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
-
     public String getNuméro() {
         return numéro;
     }
-
     public void setNuméro(String numéro) {
         this.numéro = numéro;
     }
-
     public Commandes getCommande() {
         return commandes;
     }
-
     public void setCommande(Commandes commande) {
         this.commandes = commande;
     }
