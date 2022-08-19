@@ -6,8 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 import com.gestion.commande.demo.models.Images;
+import org.springframework.stereotype.Repository;
 
-
+@Repository
 public interface ImagesRepository extends JpaRepository  < Images , Long>{
  @Query("SELECT i FROM Images i WHERE i.name=:name")
  Optional<Images> findByName(String name);

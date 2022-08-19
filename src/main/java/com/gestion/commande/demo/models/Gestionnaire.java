@@ -4,9 +4,9 @@ import lombok.Setter;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 @Entity
-@DiscriminatorValue("CLIENT")
+@DiscriminatorValue("GESTIONNAIRE")
 @Getter
 @Setter
-public class Client extends Users{
+public class Gestionnaire extends Users {
     
 }

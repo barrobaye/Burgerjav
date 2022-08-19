@@ -1,9 +1,9 @@
 package com.gestion.commande.demo.repositories;
+import com.gestion.commande.demo.models.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.gestion.commande.demo.models.Menus;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface MenusRepository extends JpaRepository <Menus , Long> {
-    
+public interface RoleRepository extends JpaRepository<Role, Long> {
+    Role findByLibelle(String libelle);
 }

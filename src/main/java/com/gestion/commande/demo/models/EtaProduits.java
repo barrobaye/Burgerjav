@@ -1,5 +1,5 @@
 package com.gestion.commande.demo.models;
 
 public enum EtaProduits {
-    Disponible , Indisponible ;
+    DISPONIBLE , INDISPONIBLE , COMMANDER , ANNULER_COMMANDE;
 }
