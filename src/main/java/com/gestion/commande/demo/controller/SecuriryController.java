@@ -4,10 +4,12 @@ import com.gestion.commande.demo.models.Client;
 import com.gestion.commande.demo.models.Role;
 import com.gestion.commande.demo.models.Users;
 import com.gestion.commande.demo.services.UserService;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,16 +23,16 @@ public class SecuriryController {
 
     @GetMapping("/login")
     public String getLoginView() {
-        return "Security/login";
+        return "security/login";
     }
 
-    @GetMapping("/gestionnaire/home")
+    @GetMapping("/dash/index")
     public String home(Model model){
 
         org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         Users user = userService.findUserByEmail(auth.getName());
         model.addAttribute("msg", "Bonjour " + user.getNom() + " " + user.getPrenom());
-        return "gestionnaire/listCommande";
+        return "dash/index";
     }
     ////registration
     @GetMapping({"/inscription"})
@@ -40,7 +42,7 @@ public class SecuriryController {
 
         model.addAttribute("users", users);
         modelAndView.setViewName("inscription");
-        return "Security/inscription";
+        return "security/inscription";
     }
 
     // @GetMapping({"/registration"})

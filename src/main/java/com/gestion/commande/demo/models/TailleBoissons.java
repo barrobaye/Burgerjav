@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 @Getter
@@ -15,7 +17,12 @@ public class TailleBoissons {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
-    private  Integer quantité;
-    private  Integer prix;
+    public  Integer quantité;
+    public  Integer prix;
+    public String nomtaille;
+
+    @ManyToOne
+    @JoinColumn(name = "type", referencedColumnName ="id")
+    public  TypeBoissons type;
 
 }

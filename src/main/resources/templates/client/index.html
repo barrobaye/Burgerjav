@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" th:href="@{stylesheets/dash.css}">
+    <title>Document</title>
+</head>
+<body>
+     <div class="barmenu">
+        <nav>
+                   <h1 class="logo" >Brazil Burger</h1>
+               <ul>
+                   <li class= "icon" ><a href="#"></a><i class="fa-solid fa-house"></i></li>
+                   <li class= "icon"><a href="#"></a><i class="fa-solid fa-comment-dots"></i></li>
+                   <li class= "icon"><a href="#"></a><i class="fa-solid fa-user"></i></li>
+                   <li class= "icon"><a href="#"></a><i class="fa-solid fa-bookmark"></i></li>
+                   <li class= "icon"><a href="#"></a><i class="fa-solid fa-gear"></i></li>
+               </ul>
+        </nav> 
+        <div class="tableau">
+          <div class="Dasboard">
+               <div class="annonce">
+               <h1> BIENVENUE SUR VOTRE DASHBORD</h1>
+              </div>
+              <hr style="border:1px solid white; width:auto">
+              <h3 style="color: white;">History des commandes</h3>
+              <div class="histblog">
+                <div class="bloc" >
+                  <img style=" width: 362px; height:275px;border-radius: 50px;" th:src="@{img/menu.jpeg}" alt="">
+                  <img style=" width: 362px; height:275px; border-radius: 50px;"  th:src="@{img/ttt.jpg}" alt="">
+                </div>
+                <div class="bloc" >
+                  <img style=" width: 362px; height:275px; border-radius: 50px;" th:src="@{img/ttt.jpg}" alt="">
+                </div>
+                
+              </div>
+          </div> 
+       </div>
+    <div class="recap">
+        <div class="barederecherche">
+            <input type="text" placeholder="recherche"> <i id="shearch" class="fa-solid fa-magnifying-glass"></i>
+            <div class="cloche"> <i id="clo"class="fa-regular fa-bell"></i></div>
+            <div class="clo"><i id="cli" class="fa-solid fa-arrow-up-from-ground-water"></i></div>
+       </div>
+     
+       
+         <h2 class="titreResto"> Restaurant Brazil Burger</h2>        
+
+       <div class="hospi">
+              <button>Menu Burger</button>   
+              <button>Ma Commande</button>    
+ 
+  </div>
+     
+       <div class="doneruser">
+        <h3>Recents</h3>
+        <p>Tout voir</p>
+    </div>
+   </div>
+    </div> 
+        
+        
+ 
+</body>
+</html>

@@ -1,5 +1,3 @@
-package com.gestion.commande.demo.models;
-
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,11 +9,9 @@ import javax.persistence.Id;
 @Entity
 @Getter
 @Setter
-public class TypeBoissons {
+public class PortionFrite {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  Long id;
-     public String nomtype;
-
-    
+    private Long id;
+    private  String typePortion;
 }
