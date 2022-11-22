@@ -16,8 +16,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
 @Controller
 public class SecuriryController {
+
     @Autowired
     private UserService userService;
 
@@ -28,7 +30,6 @@ public class SecuriryController {
 
     @GetMapping("/dash/index")
     public String home(Model model){
-
         org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         Users user = userService.findUserByEmail(auth.getName());
         model.addAttribute("msg", "Bonjour " + user.getNom() + " " + user.getPrenom());
@@ -39,7 +40,6 @@ public class SecuriryController {
     public String registration(Model model){
         ModelAndView modelAndView = new ModelAndView();
         Users users = new Client();
-
         model.addAttribute("users", users);
         modelAndView.setViewName("inscription");
         return "security/inscription";
@@ -60,8 +60,8 @@ public class SecuriryController {
         Users userExists = userService.findUserByEmail(users.getEmail());
         if (userExists != null) {
             bindingResult
-                    .rejectValue("userName", "error.user",
-                            "There is already a user registered with the user name provided");
+                .rejectValue("userName", "error.user",
+                    "There is already a user registered with the user name provided");
         }
         if (bindingResult.hasErrors()) {
             modelAndView.setViewName("inscription");
@@ -72,7 +72,6 @@ public class SecuriryController {
             users.setRole(role);
             modelAndView.addObject("user", new Client());
             modelAndView.setViewName("inscription");
-
         }
         return "Security/inscription";
     }

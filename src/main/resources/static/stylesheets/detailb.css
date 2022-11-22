@@ -1,3 +1,7 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../../../../../../../var/lib/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,117 +67,89 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 2, ../sass/first.scss */
-* {
-  box-sizing: border-box;
-}
-
-/* line 5, ../sass/first.scss */
+/* line 7, ../sass/detailb.scss */
 body {
   overflow-x: hidden;
 }
 
-/* line 8, ../sass/first.scss */
-#top {
-  margin-top: 25px;
-  display: flex;
-}
-
-/* line 12, ../sass/first.scss */
-.left {
-  display: flex;
-  width: 220px;
-  justify-content: space-around;
+/* line 10, ../sass/detailb.scss */
+.name {
   align-items: center;
+  margin-left: 140px;
+  display: block;
+  height: 491px;
+  margin-top: 25px;
+  justify-content: center;
 }
 
-/* line 18, ../sass/first.scss */
-.right {
-  margin-left: auto;
+/* line 18, ../sass/detailb.scss */
+h1 {
+  font-size: larger;
+  font-weight: bold;
 }
-/* line 20, ../sass/first.scss */
-.right button {
-  border-radius: 50px;
+
+/* line 24, ../sass/detailb.scss */
+.bur {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
-/* line 23, ../sass/first.scss */
-.right .panier {
+
+/* line 31, ../sass/detailb.scss */
+.text {
+  margin: auto;
+  color: white;
+  text-align: center;
+  align-items: center;
+  z-index: 3;
+  font-size: larger;
+  margin-top: -305px;
+  font-style: italic;
+}
+
+/* line 41, ../sass/detailb.scss */
+.body {
+  margin: auto;
+  height: 60vh;
+}
+
+/* line 45, ../sass/detailb.scss */
+.head {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  height: 50px;
+  border: solid 2px;
+  justify-content: space-around;
+}
+
+/* line 53, ../sass/detailb.scss */
+.foot {
+  padding: 12px;
+  border: solid 1px #adb5bd;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 61, ../sass/detailb.scss */
+button {
   background-color: black;
   color: white;
+  height: 40px;
+  width: 100px;
+  margin-right: 12px;
 }
 
-/* line 28, ../sass/first.scss */
-.image {
-  margin-top: 33px;
-  width: 1354px;
-  height: 99vh;
-}
-
-/* line 34, ../sass/first.scss */
-.plan1 {
-  margin-top: -628px;
-  width: 1354px;
-  height: 99vh;
-  background-color: black;
-  opacity: 0.7;
-  position: relative;
-}
-
-/* line 42, ../sass/first.scss */
+/* line 69, ../sass/detailb.scss */
 .inf {
-  margin-top: 8px;
-  margin-left: 35px;
-}
-/* line 45, ../sass/first.scss */
-.inf .titre {
-  font-weight: bold;
-  font-size: x-large;
-}
-/* line 49, ../sass/first.scss */
-.inf h3 {
-  font-weight: bold;
-  font-size: large;
-}
-
-/* line 55, ../sass/first.scss */
-.burger {
-  margin-top: 33px;
-  width: 1354px;
+  margin-left: 945px;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
   display: flex;
-}
-/* line 59, ../sass/first.scss */
-.burger .menu {
-  margin-left: 12px;
-  width: 400px;
-  height: 400px;
-  overflow-y: scroll;
-  scrollbar-color: rebeccapurple green;
-  scrollbar-width: thin;
-}
-/* line 66, ../sass/first.scss */
-.burger .menu nav a {
-  text-decoration: none;
-  color: black;
-}
-
-/* line 72, ../sass/first.scss */
-.catalo {
-  width: 1700px;
-}
-
-/* line 75, ../sass/first.scss */
-.titr {
-  font-weight: bold;
-  font-size: x-large;
-  margin-left: 7px;
-}
-
-/* line 80, ../sass/first.scss */
-.section {
-  width: 70% border;
-}
-
-/* line 84, ../sass/first.scss */
-#obj {
-  width: 1052px;
-  margin-left: 10px;
+  justify-content: flex-end;
 }

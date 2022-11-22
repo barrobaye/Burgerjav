@@ -1,0 +1,311 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Playfair+Display:ital@1&display=swap");
+/* line 5, ../../../../../../../../../../var/lib/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../var/lib/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../var/lib/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../var/lib/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../var/lib/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../var/lib/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../var/lib/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../var/lib/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../var/lib/gems/3.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/client.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/client.scss */
+body {
+  overflow-x: hidden;
+  font-family: 'Actor,','sans-serif';
+  margin: 0;
+}
+
+/* line 17, ../sass/client.scss */
+.barmenu {
+  justify-content: flex-start;
+  display: flex;
+  width: 1350px;
+}
+
+/* line 22, ../sass/client.scss */
+nav {
+  border-right: 2px solid rgba(200, 200, 200, 0.1);
+  color: white;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 170vh;
+}
+
+/* line 32, ../sass/client.scss */
+nav .logo {
+  color: black;
+  padding: 11px;
+  font-family: serif;
+  font-size: xx-large;
+  width: 118px;
+  text-align: center;
+}
+
+/* line 41, ../sass/client.scss */
+nav ul {
+  color: black;
+  list-style: none;
+  margin-top: 170px;
+  margin-left: 30px;
+}
+
+/* line 48, ../sass/client.scss */
+nav ul li {
+  align-items: center;
+  width: 95%;
+  padding: 20px;
+}
+
+/* line 55, ../sass/client.scss */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* line 61, ../sass/client.scss */
+.show-nav {
+  transform: translateX(200px);
+}
+
+/* ------------------header---------------- */
+/* line 67, ../sass/client.scss */
+header {
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 110%;
+  position: relative;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/* line 75, ../sass/client.scss */
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* line 81, ../sass/client.scss */
+header p {
+  margin: 30px 0;
+}
+
+/* line 86, ../sass/client.scss */
+.toggle {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+/* line 92, ../sass/client.scss */
+.tableau {
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+  background-image: url(/img/yes.jpg);
+  display: flex;
+  height: auto;
+  width: 759px;
+  background-color: #ffff;
+}
+
+/* line 102, ../sass/client.scss */
+.Dasboard {
+  width: 814px;
+  display: block;
+}
+
+/* line 106, ../sass/client.scss */
+.annonce {
+  margin-top: 11px;
+  height: 87px;
+  margin-left: 181px;
+  background-image: linear-gradient(#2E4B9C, #2EBFB3 100%);
+  border-radius: 38px;
+}
+/* line 112, ../sass/client.scss */
+.annonce h1 {
+  font-size: medium;
+  font-family: 'Actor';
+  padding: 34px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* line 122, ../sass/client.scss */
+.riri {
+  font-weight: bold;
+  color: white;
+  font-size: medium;
+}
+
+/* line 127, ../sass/client.scss */
+.recap {
+  background-color: #f5f5f5;
+  width: 391px;
+  border-top-left-radius: 50px;
+}
+/* line 132, ../sass/client.scss */
+.recap input {
+  margin-left: 8px;
+  margin-top: 24px;
+  border: 1px solid #E4E9F2;
+  border-radius: 17px;
+  height: 44px;
+}
+
+/* line 142, ../sass/client.scss */
+#shearch {
+  margin-left: -32px;
+}
+
+/* line 145, ../sass/client.scss */
+.barederecherche {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 150, ../sass/client.scss */
+.outil {
+  margin-top: 99px;
+  justify-content: space-around;
+  display: flex;
+  width: 812px;
+  height: 313px;
+}
+
+/* line 157, ../sass/client.scss */
+.doneruser {
+  margin-top: 32px;
+  margin-left: 12px;
+  width: 360px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 164, ../sass/client.scss */
+.doneruser h3 {
+  font-size: medium;
+  font-weight: 100;
+}
+/* line 168, ../sass/client.scss */
+.doneruser p {
+  font-size: smaller;
+  font-weight: 50;
+  color: #1B69C7;
+}
+
+/* line 175, ../sass/client.scss */
+.histblog {
+  margin-left: 14px;
+  display: block;
+  justify-content: space-between;
+}
+/* line 179, ../sass/client.scss */
+.histblog .bloc {
+  justify-content: space-around;
+  padding: 10px 10px;
+  display: flex;
+}
+
+/* line 184, ../sass/client.scss */
+.titreResto {
+  font-size: x-large;
+  font-family: monospace;
+  padding: 34px 20px;
+}
+
+/* line 189, ../sass/client.scss */
+.titreMeil {
+  text-align: center;
+  padding: 12px;
+  font-size: x-large;
+  font-family: monospace;
+  margin: auto;
+}
+
+/* line 196, ../sass/client.scss */
+.hospi {
+  justify-content: space-around;
+  display: flex;
+}
+/* line 199, ../sass/client.scss */
+.hospi .monbutton {
+  font-size: smaller;
+  height: 30px;
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  background-color: #007bff;
+}

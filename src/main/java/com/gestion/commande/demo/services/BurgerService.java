@@ -1,9 +1,11 @@
 package com.gestion.commande.demo.services;
 
-
 import com.gestion.commande.demo.models.Burgers;
 import com.gestion.commande.demo.repositories.BurgersRepository;
 import lombok.extern.java.Log;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,5 +22,8 @@ public class BurgerService {
             log.severe(e.getLocalizedMessage());
             throw e;
         }
+    }
+    public List<Burgers> getAllBurgers(){
+        return burgerRepo.findAll();
     }
 }

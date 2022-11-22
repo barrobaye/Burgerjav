@@ -1,13 +1,8 @@
 package com.gestion.commande.demo.controller;
-
 import com.gestion.commande.demo.models.Boissons;
 import com.gestion.commande.demo.models.Burgers;
 import com.gestion.commande.demo.services.BurgerService;
 import com.gestion.commande.demo.services.BoissonService;
-
-
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
@@ -17,12 +12,12 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.IOException;
 import java.lang.annotation.Target;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 
 @Controller
 
@@ -36,6 +31,13 @@ public class AddProduitController {
     @GetMapping({"/burger", "/burger"})
     public String getViewAddBurger(Model model) {
         Burgers burgers = new Burgers();
+        model.addAttribute("burgers",burgers);
+        return "index";
+    }
+
+    @GetMapping({"/liste-produit", "/liste-produit"})
+    public String getViewListProduit(Model model) {
+        List<Burgers> burgers = burgerService.getAllBurgers();
         model.addAttribute("burgers",burgers);
         return "index";
     }

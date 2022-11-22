@@ -25,7 +25,7 @@
         <button class="seconnecte">Se connecter</button>
     </div>
 </div>
-<img class="image" th:src="@{img/image1.png}" alt="">
+<img class="image" th:src="@{img/menusimple.jpeg}" alt="">
 <div class="plan1" id=""></div>
 <div class="inf">
 <h1 class="titre"> Les Burgers de Brazil Burger - Ouest Foire </h1>
@@ -59,57 +59,23 @@
     <div class="catalo">
         <div class="row" id="obj">
             <h1 class="titr">Notre Selection pour vous</h1>
-            <div class="col-md-3 col-sm-6 col-xs-12 mt-3">
+        <!--     <div class="col-md-3 col-sm-6 col-xs-12 mt-3">
                 <div class="card" >
-                    <img th:src="@{img/21efd1f1-8ac0-42c0-a787-b2aeddee8c77.jpeg}"class="card-img-top" alt="...">
+                    <img th:src="@{img/menusimple.jpeg}"class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">2500FCFA</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-3 col-sm-6 col-xs-12 mt-3">
+            <div class="col-md-3 col-sm-6 col-xs-12 mt-3" th:each="b : ${burgers}">
                 <div class="card" >
-                    <img th:src="@{img/21efd1f1-8ac0-42c0-a787-b2aeddee8c77.jpeg}" class="card-img-top" alt="...">
+                    <img th:src="@{img/${b.image}}"  class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">2500 FCFA</p>
+                        <p class="card-text" th:text="${b.prix}"></p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 mt-3">
-                <div class="card" >
-                    <img th:src="@{img/21efd1f1-8ac0-42c0-a787-b2aeddee8c77.jpeg}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">2500 FCFA</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 mt-3">
-                <div class="card" >
-                    <img th:src="@{img/21efd1f1-8ac0-42c0-a787-b2aeddee8c77.jpeg}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">2500 FCFA</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 mt-3">
-                <div class="card" >
-                    <img th:src="@{img/21efd1f1-8ac0-42c0-a787-b2aeddee8c77.jpeg}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">2500 FCFA</p>
-                    </div>
-                </div>
-            </div>
-            <!--<div class="section">
-               <div class="obj">
-                   <img src="" alt="">
-                   <h2></h2>
-                   <p></p>
-               </div>
-               -->
             </div>
         </div>
     </div>

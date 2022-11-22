@@ -5,64 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" th:href="@{stylesheets/dash.css}">
+    <link rel="stylesheet" th:href="@{stylesheets/client.css}">
     <title>Document</title>
 </head>
-<body>
-     <div class="barmenu">
-        <nav>
-                   <h1 class="logo" >Brazil Burger</h1>
-               <ul>
-                   <li class= "icon" ><a href="#"></a><i class="fa-solid fa-house"></i></li>
-                   <li class= "icon"><a href="#"></a><i class="fa-solid fa-comment-dots"></i></li>
-                   <li class= "icon"><a href="#"></a><i class="fa-solid fa-user"></i></li>
-                   <li class= "icon"><a href="#"></a><i class="fa-solid fa-bookmark"></i></li>
-                   <li class= "icon"><a href="#"></a><i class="fa-solid fa-gear"></i></li>
-               </ul>
-        </nav> 
-        <div class="tableau">
-          <div class="Dasboard">
-               <div class="annonce">
-               <h1> BIENVENUE SUR VOTRE DASHBORD</h1>
-              </div>
-              <hr style="border:1px solid white; width:auto">
-              <h3 style="color: white;">History des commandes</h3>
-              <div class="histblog">
-                <div class="bloc" >
-                  <img style=" width: 362px; height:275px;border-radius: 50px;" th:src="@{img/menu.jpeg}" alt="">
-                  <img style=" width: 362px; height:275px; border-radius: 50px;"  th:src="@{img/ttt.jpg}" alt="">
-                </div>
-                <div class="bloc" >
-                  <img style=" width: 362px; height:275px; border-radius: 50px;" th:src="@{img/ttt.jpg}" alt="">
-                </div>
-                
-              </div>
-          </div> 
-       </div>
-    <div class="recap">
-        <div class="barederecherche">
-            <input type="text" placeholder="recherche"> <i id="shearch" class="fa-solid fa-magnifying-glass"></i>
-            <div class="cloche"> <i id="clo"class="fa-regular fa-bell"></i></div>
-            <div class="clo"><i id="cli" class="fa-solid fa-arrow-up-from-ground-water"></i></div>
-       </div>
-     
-       
-         <h2 class="titreResto"> Restaurant Brazil Burger</h2>        
 
-       <div class="hospi">
-              <button>Menu Burger</button>   
-              <button>Ma Commande</button>    
- 
-  </div>
+<body>
+  <div class="barmenu">
+      <nav>
+                 <h1 class="logo" >Brazil Burger</h1>
+             <ul>
+                 <li class= "icon" ><a href="#"></a><i class="fa-solid fa-house"></i></li>
+                 <li class= "icon"><a href="#"></a><i class="fa-solid fa-comment-dots"></i></li>
+                 <li class= "icon"><a href="#"></a><i class="fa-solid fa-user"></i></li>
+                 <li class= "icon"><a href="#"></a><i class="fa-solid fa-bookmark"></i></li>
+                 <li class= "icon"><a href="#"></a><i class="fa-solid fa-gear"></i></li>
+             </ul>
+      </nav> 
+      <div class="tableau">
+        <div class="Dasboard">
+             <div class="annonce col-md-6">
+             <h1> BIENVENUE SUR VOTRE DASHBORD</h1>
+            </div>
+            <hr style="border:1px solid white; width:auto">
+            <div class="row-fluid"><h3 class="riri col-md-4 offset-1">History des commandes</h3></div>
+            <div class="histblog">
+              <div class="bloc row-fluid" >
+                <img class="col-md-5" src="/img/plan1.png" alt="">
+                <img  class="col-md-5" src="/img/plan2.png" alt="">
+              </div>
+              <div class="bloc" >
+                <img src="/img/plan3.png" alt="">
+              </div>
+              
+            </div>
+        </div> 
+     </div>
+  <div class="recap">
+      <div class="barederecherche row-fluid">
+        <div class="col-md-8">            <input type="text" placeholder="recherche"> <i id="shearch" class="fa-solid fa-magnifying-glass"></i>          </div>
+          <div class="row col-4 " style="justify-content: space-evenly;">
+            <div class="cloche"> <i id="clo"class="fa-regular fa-bell"></i></div>
+          <div class="clo"><i id="cli" class="fa-solid fa-arrow-up-from-ground-water"></i></div>
+          </div>
+     </div>
+   
      
-       <div class="doneruser">
-        <h3>Recents</h3>
-        <p>Tout voir</p>
-    </div>
-   </div>
-    </div> 
-        
-        
- 
+       <h2 class="titreResto"> Restaurant Brazil Burger</h2>        
+
+<div class="hospi">
+  <a href="" class="btn monbutton">Menu Burger</a>   
+  <a href="" class="btn monbutton">Ma Commande</a>    
+</div>
+<h2 class="titreMeil">Les Meilleurs Burger </h2>   
+<div class="hospi">
+  <a href="" class="btn monbutton">Annuler</a>   
+  <a href="" class="btn monbutton">Paiement</a>    
+</div>
+     <div class="doneruser">
+      <h3>Recents</h3>
+      <p>Tout voir</p>
+  </div>
+  <hr style="color: black; width:auto">
+<div class="row-fluid container justify-content-between">
+  <img src="/img/plan1.png"style="height: 100px;padding: 6px 31px;" alt="">
+  <img src="/img/plan2.png"style="height: 100px;padding: 6px 31px;" alt="">
+  <img src="/img/plan3.png"style="height: 100px;padding: 6px 31px;" alt="">
+
+</div>
+  </div>
+      
+      
+
 </body>
 </html>
