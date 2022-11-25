@@ -1,7 +1,5 @@
 package com.gestion.commande.demo.security;
 
-import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
-import org.aspectj.weaver.ast.And;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -26,17 +24,17 @@ public class WebConfig  extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         web
                 .ignoring()
-                .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/images/**");
+                .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**","/stylesheets/**", "/images/**");
     }
 
     @Override
     public void configure(HttpSecurity http) throws Exception{
-        /* http
+         http
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/images/**").permitAll()
-                .antMatchers("/").permitAll()
-                .antMatchers("/login").permitAll()
+                .antMatchers("/").permitAll();
+                /* .antMatchers("/login").permitAll()
                 .antMatchers("/inscription").permitAll()
                 .antMatchers("/index").permitAll()
                 .antMatchers("/detail/{type}/{id}").permitAll()
@@ -54,9 +52,11 @@ public class WebConfig  extends WebSecurityConfigurerAdapter {
                 .defaultSuccessUrl("/gestionnaire/home", true)
                 .permitAll()
                 .and()
-                .logout()
+                .logout() 
                 .permitAll();
- */   }
+                */
+    }
+    
     
 
 

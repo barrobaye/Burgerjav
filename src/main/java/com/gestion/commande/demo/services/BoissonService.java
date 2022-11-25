@@ -1,7 +1,6 @@
 package com.gestion.commande.demo.services;
 
 import com.gestion.commande.demo.models.Boissons;
-import com.gestion.commande.demo.models.Burgers;
 import com.gestion.commande.demo.repositories.BoissonRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;

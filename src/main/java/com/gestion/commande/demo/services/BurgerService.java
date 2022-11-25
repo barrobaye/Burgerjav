@@ -26,4 +26,16 @@ public class BurgerService {
     public List<Burgers> getAllBurgers(){
         return burgerRepo.findAll();
     }
+    public Burgers findBurgersById(Long id){
+        return burgerRepo.findById(id).orElse(null);
+    }
+    public boolean deleteBurgers(Burgers burgers){
+        try {
+            burgerRepo.delete(burgers);
+            return true;
+        } catch (Exception e) {
+            log.severe(e.getLocalizedMessage());
+            throw e;
+        }
+    }
 }

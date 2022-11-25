@@ -1,3 +1,4 @@
+package com.gestion.commande.demo.models;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,5 +14,5 @@ public class PortionFrite {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private  String typePortion;
+    public  String typePortion;
 }
